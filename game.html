@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#010313] min-h-screen
+bg-[url(images/background.png)]
+ bg-no-repeat bg-center ">
+    <header></header>
+    <main class="min-h-screen flex"> 
+        <section id="sc1" class="m-auto ">
+            <div class=" text-center m-auto space-y-4">
+                <h1 class="text-[#FFF] text-7xl font-bold">ALPHABET CLASH</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button onclick="section1()" class=" bg-white p-3 rounded text-black">Play Now</button>
+            </div>
+        </section>
+        <section id="sc2" class="m-auto hidden">
+            <div class="flex-col space-y-24 bg-cyan-95">
+                <div class="artboard artboard-horizontal phone-1
+                 bg-white text-center items-center  flex flex-col justify-center
+                  border-black"><h1 class="text-blue-700 text-7xl font-bold">
+                    <span id="spn"></span></div>
+                    <div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w"class="kbd">w</kbd>
+                        <kbd id="e"class="kbd">e</kbd>
+                        <kbd id="r"class="kbd">r</kbd>
+                        <kbd id="t"class="kbd">t</kbd>
+                        <kbd id="y"class="kbd">y</kbd>
+                        <kbd id="u"class="kbd">u</kbd>
+                        <kbd id="i"class="kbd">i</kbd>
+                        <kbd id="o"class="kbd">o</kbd>
+                        <kbd id="p"class="kbd">p</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s"class="kbd">s</kbd>
+                        <kbd id="d"class="kbd">d</kbd>
+                        <kbd id="f"class="kbd">f</kbd>
+                        <kbd id="g"class="kbd">g</kbd>
+                        <kbd id="h"class="kbd">h</kbd>
+                        <kbd id="j"class="kbd">j</kbd>
+                        <kbd id="k"class="kbd">k</kbd>
+                        <kbd id="l"class="kbd">l</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd  class="kbd">/</kbd>
+                      </div>
+                    </div>
+                  <div class=" flex justify-between">
+                    <button class="bg-[#894189] px-3 rounded-full">life :<span id="life">5</span></button>
+                    <button class="bg-[#360490] px-3 rounded-full">scor:<span id="scor">0</span></button>
+                  </div>
+            </div>
+        </section>
+        <section id="sc3" class=" hidden text-black m-auto">
+            <div class="text-center bg-white p-5 rounded">
+                <h1>Score : <span id="scr1" ></span></h1>
+                <button onclick="playagain()" class=" bg-cyan-700 px-2 rounded-full">Play Now</button>
+                <p>Practice will make you Pro</p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    
+
+   <script src="game.js"></script>  
+   <script src="vag.js"></script>  
+</body>
+</html>
